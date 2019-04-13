@@ -1,0 +1,50 @@
+package assignment;
+
+//import firstPackage.Student;
+
+//public class Parameterized_constructor {
+//
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//
+//	}
+//
+//}
+class Student {
+	String name;
+	 int age;
+	String subject;
+	
+	Student(String n, String s, int a) {
+		name = n;
+		subject = s;
+		age = a;
+	}
+	
+	String stu_info() {
+		return name + age + subject ;
+	}
+
+
+
+}
+
+class BoxDemo {
+	public static void main(String args[]) {
+	
+	Student stu1 = new Student("Shakhawat ", " Accounting ", 20);
+	
+	Student stu2 = new Student("Ahsan ", " Marketing ", 19);
+	Student stu3 = new Student("Pulak ", " Computer ", 21);
+	String stu;
+	
+	stu = stu1.stu_info();
+	System.out.println("Student : " + stu);
+	
+	stu = stu2.stu_info();
+	System.out.println("Student : " + stu);
+	
+	stu = stu3.stu_info();
+	System.out.println("Student : " + stu);
+	}
+}
